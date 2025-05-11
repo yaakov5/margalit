@@ -1,0 +1,44 @@
+*{
+  margin: 0px;
+
+} 
+#countdown{
+  
+    font-family: "Codystar", sans-serif;
+    font-weight:400;
+    text-shadow: 2px 2px 5px #ff40b3;
+    font-size:7em;
+    color: #ffd65b;
+    text-align: center;
+
+  }
+  h1{
+    color: #ffd65b;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+   margin-bottom:100px;
+    font-size: 7em;
+    
+  }
+
+h2{
+  color:  #ff5bbd; 
+  font-size: 3em;
+  font-family: "Dancing Script", cursive;
+
+} 
+#ring{
+  margin-top: 20px;
+       animation: spin 10s linear infinite;
+
+}
+
+    @keyframes spin {
+
+      0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+      }
+    }

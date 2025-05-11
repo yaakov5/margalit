@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SHMULIK & MARGALIT</title>
+  <link rel="icon" href="./icons8-wedding-ring-58.png" >
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Codystar:wght@300;400&family=Kanchenjunga:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Codystar:wght@300;400&family=Dancing+Script:wght@400..700&family=Kanchenjunga:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    BODY{
+    height: 80vh;
+  text-align: center;
+  align-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.544)), url('./p.JPG');
+  background-size: cover, cover;
+  color: white;
+  text-shadow: 0px 0px 6px black;
+  padding-inline: 30px;
+  }
+</style>
+</head>
+<bu>
+  <img id="ring"  src="./wedding-ring.png" alt="wedding ring">
+<h1>SHMULIK & MARGALIT</h1>
+
+<h2>JUST</h2>
+<br>
+<div id="countdown"></div>
+
+<script>
+  // Set the target date
+  const targetDate = new Date("june 5, 2025 18:00:00").getTime();
+
+  // Update every second
+  const countdownInterval = setInterval(function () {   
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    // Time calculationsס;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display result
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    // If the countdown is finished
+    if (distance < 0) {
+      clearInterval(countdownInterval);
+      document.getElementById("countdown").innerHTML = "Time's up!";
+    }
+  }, 1000);
+</script>
+<br>
+<h2>LEFT</h2>
+ 
+
+</html>
